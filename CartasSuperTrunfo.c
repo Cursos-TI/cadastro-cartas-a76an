@@ -11,7 +11,7 @@ int main() {
 
     char estado, codigoCarta[3], cidade[25], estado2, codigoCarta2[3], cidade2[25];
     int populacao, pontosTuristicos, populacao2, pontosTuristicos2;
-    float area, pib, area2, pib2, densidadePopulacional, pibPerCapita, densidadePopulacional2; pibPerCapita2;
+    float area, pib, area2, pib2, densidadePopulacional, pibPerCapita, densidadePopulacional2, pibPerCapita2;
 
   // Área para entrada de dados
     printf("Para a Carta 1:\n");
@@ -54,11 +54,15 @@ int main() {
   pibPerCapita2 = (float) pib2/populacao2;
   
   // Área para exibição dos dados da cidade
-    printf("Carta 1:\nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %f km²\nPIB: %f bilhões de reais\nNúmero de Pontos Turísticos: %d\n
-      Densidade Populacional: %f hab/km²\n, PIB per Capita: %f reais\n", 
+  printf();
+  printf("\n*********************************************\n");
+    printf("Carta 1:\nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\n"
+      "Número de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\n", 
       estado, codigoCarta, cidade, populacao, area, pontosTuristicos, densidadePopulacional, pibPerCapita);
     printf("\n*********************************************\n");
-    printf("Carta 2:\nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %f km²\nPIB: %f bilhões de reais\nNúmero de Pontos Turísticos: %d", estado2, codigoCarta2, cidade2, populacao2, area2, pontosTuristicos2);
+    printf("Carta 2:\nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\n"
+      "Número de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\n", 
+      estado2, codigoCarta2, cidade2, populacao2, area2, pontosTuristicos2, densidadePopulacional2, pibPerCapita2);
 
 return 0;
 } 
